@@ -60,7 +60,7 @@ const textLoad =() =>{
         text.textContent = "Web Develop" ;
     }, 4000);
     setTimeout(() =>{
-        text.textContent = "Digital Marketing" ;
+        text.textContent = "Marketing" ;
     }, 8000);
 }
 
