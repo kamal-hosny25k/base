@@ -22,6 +22,27 @@
 
 }
 /* ! End Variables */
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: none;
+    scrollbar-color: #28242b #ffffff;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #28242b;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
+  }
 /* ! Start Global Rules */
 html{
     scroll-behavior: smooth;
@@ -77,8 +98,13 @@ ul {
     width: 100%;
     z-index: 100;
 }
-.header.add{
+body .header.add{
+    background-color: #e7e7e7;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 4px 0px;
+}
+body.dark .header.add{
     background-color: var(--background-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 4px 0px;
 }
 /* .header */
 .header .container{
@@ -232,7 +258,20 @@ content: "\f077";
     padding: 8px 20px;
     border-radius: 100px;
 }
-
+body.dark .header.add .container .sign a{
+    color: #fff;
+}
+body.dark .header.add .container .sign a:last-child{
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.101);
+}
+body .header.add .container .sign a{
+    color: #000;
+}
+body .header.add .container .sign a:last-child{
+    color: #000;
+    background-color: rgba(0, 0, 0, 0.107);
+}
 
 @media (max-width:992px) {
     .header .container .sideberOpen{
@@ -299,9 +338,29 @@ content: "\f077";
     .header .container .nav-links a{
         color: #fff;
         transition: var(--main-transition);
+        
     }
     .header .container .nav-links a:hover{
         color: var(--section-color-2);
+    }
+    .header .container .nav-links .f-drop a{
+        display: flex;
+        gap: 10px;
+    }
+    .header .container .nav-links .f-drop a i::before{
+        content: "\f054";
+    }
+    .header .container .nav-links .f-drop:hover a i::before{
+        content: "\f053";
+    }
+    .header .container .nav-links .f-drop .p-drop{
+        top: 0px;
+        left: 100px;
+    }
+    .header .container .nav-links .f-drop .p-drop::before{
+        left: -9px;
+        top: 22.46px;
+        transform: rotate(315deg);
     }
 }
 
@@ -320,11 +379,8 @@ content: "\f077";
         color: #000;
         background-color: rgba(0, 0, 0, 0.107);
     }
-
-
-
-
 }
+
 /* ! End Header */
 /* ! Start Landing */
 .landing{
@@ -540,11 +596,12 @@ color: var(--section-color-1);
     overflow: hidden;
 }
 .landing .container .info-img div img{
+    width: 550px;
     max-width: 100%;
     position: absolute;
     z-index: 2;
-    bottom: -10px;
-    left: 10px;
+    bottom: -6px;
+    left: 133px;
 }
 .landing .container .info-img .info-img-s1{
     position: absolute;
