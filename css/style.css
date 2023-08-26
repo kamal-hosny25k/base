@@ -1023,25 +1023,30 @@ gap: 10px;
     padding: 60px 0;
     background-color: var(--background-color2);
     position: relative;
+    height: 550px;
+    background-image: url('/img/shape-08.svg');
+    background-position: right;
+
 }
 .our-creative .shape-1{
     position: absolute;
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
     background-color: #f36a8d;
-    top: 100px;
-    right: 100px;
-    
+    top: 140px;
+    right: 300px;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-
+    animation: rotat 50s infinite ;
 }
 .our-creative .shape-2{
     position: absolute;
-    height: 100px;
-    width: 100px;
+    height: 40px;
+    width: 50px;
     background-color: #fa9161;
-    bottom: 0;
-    left: 0;
+    bottom: 77px;
+    left: 155px;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    animation: rotat 10s infinite ;
 }
 .our-creative .shape-3{
     position: absolute;
@@ -1050,8 +1055,8 @@ gap: 10px;
     background-color: transparent;
     border: #4e6bff 8px solid;
     border-radius: 50%;
-    top: 0;
-    left: 0;
+    top: 40px;
+    left: 370px;
 }
 
 .our-creative .container .cards{
@@ -1065,6 +1070,10 @@ gap: 10px;
 .our-creative .container .cards .card .image{
 position: relative;
 overflow: hidden;
+}
+.our-creative .container .cards .card .image img{
+position: relative;
+z-index: 2;
 }
 .our-creative .container .cards .card .image:hover .icons{
     bottom: 0;
@@ -1133,5 +1142,18 @@ overflow: hidden;
     color: var(--section-color-2);
 }
 
-
+@keyframes rotat {
+    0%{
+        transform: rotate(0deg);
+    }
+    40%{
+        transform: rotate(360deg);
+    }
+    60%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
 
