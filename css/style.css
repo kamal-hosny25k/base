@@ -1185,22 +1185,70 @@ z-index: 2;
         left: 50px;
     }
 }
-/* Start quality */
+/*  ! Start quality */
 .quality{
+    position: relative;
     margin-top: 250px;
-    padding: 60px 0;
+    padding: 100px 0;
     background-color: var(--background-color);
 }
+@media (max-width:1220px){
+    .quality{
+        position: relative;
+        margin-top: 750px;
+        padding: 60px 0;
+    }
+}
+@media (max-width:806px){
+    .quality{
+        position: relative;
+        margin-top: 1250px;
+        padding: 60px 0;
+    }
+}
 .quality .container{
-
 }
 .quality .container .boxs{
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 .quality .container .boxs .box{
-
+display: flex;
+flex-direction: column;
+gap: 35px;
+padding: 40px;
+border-radius: 4px;
+width: 400px;
+transition: var(--main-transition);
 }
-.quality .container .boxs .box .icon{
-
+.quality .container .boxs .box:hover{
+    background-color:var(--background-color2) ;
 }
-/* End quality */
+.quality .container .boxs .box  i{
+    color: #4070F4;
+    font-size: 44px;
+}
+.quality .container .boxs .box .info{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.quality .container .boxs .box .info h4{
+    font-size: 26px;
+    font-weight: 500;
+    color: var(--section-color-1);
+}
+.quality .container .boxs .box .info p{
+    font-size: 16px;
+    color: var(--section-color-2);
+    line-height: 23px;
+    word-spacing: 2px;
+}
+/* ! End quality */
+/* ! Start Prices */
+
+
+/* ! End Prices */
