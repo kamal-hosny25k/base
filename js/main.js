@@ -11,7 +11,6 @@ if( getMode && getMode === "dark"){
     body.classList.add("dark");
     toggle.classList.add("active")
 }
-
 toggle.addEventListener("click",() => {
     body.classList.toggle("dark");
 
@@ -66,3 +65,9 @@ const textLoad =() =>{
 
 textLoad()
 setInterval(textLoad,12000 );
+
+// Prices
+
+const toggle2 = document.querySelector(".toggle-2");
+
+toggle2.addEventListener("click",()=> toggle2.classList.toggle("active"));

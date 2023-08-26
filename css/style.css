@@ -1249,6 +1249,136 @@ transition: var(--main-transition);
 }
 /* ! End quality */
 /* ! Start Prices */
+.prices{
+    position: relative;
+    padding: 60px 0;
+    background-color: var(--background-color2);
+    background-image: url('/img/shape-08.svg');
+    background-position: 100% right;
+    background-repeat: no-repeat;
+}
+.prices .container{
 
+}
 
+.prices .container .bill{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+.prices .container .bill p{
+    color: var(--section-color-1);
+}
+/* ?  .toggle-2 */
+.prices .container .bill .toggle-2{
+    position: relative;
+    height: 20px;
+    width: 38px;
+    border-radius: 100px;
+    background-color: #4e6bff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.prices .container .bill .toggle-2::before{
+    content: "";
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    background-color: #fff;
+    border-radius: 50% ;
+    top: 50%;
+    left: 3px;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
+}
+.prices .container .bill .toggle-2.active::before{
+    left: calc(100% - 16px - 3px);
+}
+/* ?  .toggle-2 */
+.prices .container .tables {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+} 
+.prices .container .tables .table {
+    background-color: var(--background-color);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+} 
+.prices .container .tables .table h4{
+    color: var(--section-color-1);
+    font-weight: 600;
+} 
+.prices .container .tables .table .head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+} 
+.prices .container .tables .table .head h2{
+    font-size: 40px;
+    color: var(--section-color-1);
+} 
+.prices .container .tables .table .head span{
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--section-color-1);
+} 
+.prices .container .tables .table p{
+    font-size: 16px;
+    color: var(--section-color-2);
+} 
+.prices .container .tables .table a{
+    color: #fff;
+    background-color: #f36a8d;
+    padding: 7px 30px;
+    border-radius: 100px;
+    font-weight: 500;
+    font-size: 13px;
+    transition: var(--main-transition);
+} 
+.prices .container .tables .table a:hover{
+    background-color: #4e6bff;
+}
+.prices .container .tables .table:nth-child(2) a{
+    background-color: #4e6bff;
+}
+.prices .container .tables .table:nth-child(2) a:hover{
+    background-color: #f36a8d;
+}
+.prices .container .tables .table ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+} 
+.prices .container .tables .table ul li{
+    font-size: 14px;
+    color: var(--section-color-2);
+} 
+.prices .container .tables .table h5{
+    margin-top: 15px;
+    font-size: 16px;
+    color: var(--section-color-1);
+} 
 /* ! End Prices */
+/* ! Start filter */
+.filter{
+    position: relative;
+    padding: 60px 0;
+    background-color: var(--background-color);
+}
+.filter .container{
+
+}
+/* ! End filter */
