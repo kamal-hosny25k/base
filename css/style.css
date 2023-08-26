@@ -84,6 +84,8 @@ ul {
     gap: 30px;
     text-align: center;
     margin: 40px 0 80px ;
+    position: relative;
+    z-index: 10;
 }
 .main-title h2{
     color: var(--section-color-1);
@@ -1046,7 +1048,7 @@ gap: 10px;
     bottom: 77px;
     left: 155px;
     clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-    animation: rotat 10s infinite ;
+    animation: rotat 50s infinite ;
 }
 .our-creative .shape-3{
     position: absolute;
@@ -1156,4 +1158,29 @@ z-index: 2;
         transform: rotate(-360deg);
     }
 }
-
+@media (max-width:992px){
+    .our-creative .shape-1{
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        background-color: #f36a8d;
+        top: 140px;
+        right: 100px;
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+        animation: none ;
+    }
+    .our-creative .shape-2{
+        display: none;
+        animation: none ;
+    }
+    .our-creative .shape-3{
+        top: 40px;
+        left: 170px;
+    }
+}
+@media (max-width:768px){
+    .our-creative .shape-3{
+        top: 78px;
+        left: 50px;
+    }
+}
