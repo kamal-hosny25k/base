@@ -1382,3 +1382,212 @@ transition: var(--main-transition);
 
 }
 /* ! End filter */
+/* ! Start testimonials */
+.testimonials{
+    position: relative;
+    padding: 60px 0 130px;
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.testimonials .container{
+
+}
+/* ? Start wrapper */
+.wrapper{
+    max-width: 1100px;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.wrapper .arrow {
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    bottom: -80px;
+    cursor: pointer;
+    position: absolute;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    transform: translateX(-50%);
+}
+.wrapper .arrow#left{
+    left: 43%;
+}
+.wrapper .arrow#right{
+    right: 43%;
+}
+.wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 100%;
+    gap: 16px;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: 0;
+}
+.wrapper .carousel::-webkit-scrollbar{
+    display: none;
+}
+.wrapper .carousel.no-transition{
+    scroll-behavior: auto;
+}
+.wrapper .carousel.dragging{
+    scroll-snap-type : none;
+    scroll-behavior: auto;
+}
+.wrapper .carousel.dragging .card{
+    cursor: grab;
+    user-select: none;
+}
+.wrapper .carousel .card{
+    scroll-snap-align: start ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1000px;
+    position: relative;
+    padding-right:20px;
+    cursor: pointer;
+}
+.wrapper .carousel .card img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+.wrapper .carousel .card.card::before{
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 10px;
+    height: 100%;
+    background-image: linear-gradient( to bottom, #4e6bfe 50% , #f26a8c 50%);
+    border-top-right-radius: 8px ;
+    border-bottom-right-radius: 8px ;
+}
+.wrapper .carousel .card .info-text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 30px;
+}
+.wrapper .carousel .card .info-text .quote{
+    color: #e0e3f1;
+    font-size: 60px;
+}
+.wrapper .carousel .card .info-text p i{
+    font-size: 20px;
+    line-height: 32px;
+    max-width: 100px;
+    font-weight: 500;
+    word-spacing: 1px;
+    color: var(--section-color-2);
+}
+.wrapper .carousel .card .info-text .footer-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.wrapper .carousel .card .info-text .footer-info .email{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+.wrapper .carousel .card .info-text .footer-info .email h3{
+    font-weight: 400;
+    color: var(--section-color-1);
+    font-size: 18px;
+}
+.wrapper .carousel .card .info-text .footer-info .email h4{
+    font-weight: 400;
+    color: var(--section-color-2);
+    font-size: 16px;
+}
+.wrapper .carousel .card .info-text .footer-info h2{
+    color: var(--section-color-2);
+}
+
+@media (max-width:1200px){
+    .wrapper{
+        max-width: 900px;
+        position: relative;
+
+    }
+    .wrapper .carousel .card{
+        max-width: 800px;
+     
+    }
+    .wrapper .carousel .card .info-text p i{
+        font-size: 18px;
+        line-height: 30px;
+        max-width: 100px;
+        font-weight: 500;
+        word-spacing: 1px;
+    }
+}
+@media (max-width:992px){
+    .wrapper{
+        max-width: 400px;
+    }
+    .wrapper .carousel .card{
+        max-width: 400px;
+        flex-direction: column;
+    }
+    .wrapper .arrow#left{
+        left: 33%;
+    }
+    .wrapper .arrow#right{
+        right: 23%;
+    }
+}
+@media (max-width:768px){
+    .wrapper .carousel .card .info-text {
+        max-width: 350px;
+        padding: 20px;
+    }
+    .wrapper .carousel .card .info-text .quote{
+        color: #e0e3f1;
+        font-size: 40px;
+    }
+    .wrapper .carousel .card .info-text p i{
+        font-size: 14px;
+        line-height: 25px;
+        word-spacing: 0.8px;
+    }
+    .wrapper .carousel .card .info-text .footer-info .email h3{
+        font-weight: 400;
+        color: var(--section-color-1);
+        font-size: 16px;
+    }
+    .wrapper .carousel .card .info-text .footer-info .email h4{
+        font-weight: 400;
+        color: var(--section-color-2);
+        font-size: 14px;
+    }
+    .wrapper .carousel .card .info-text .footer-info h2{
+        color: var(--section-color-2);
+        font-size: 20px;
+    }
+
+    .wrapper .arrow#left{
+        left: 33%;
+    }
+    .wrapper .arrow#right{
+        right: 23%;
+    }
+}
+/* ? End wrapper */
+/* ! End testimonials */
