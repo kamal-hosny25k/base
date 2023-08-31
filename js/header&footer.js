@@ -21,7 +21,7 @@ generateheader = () =>{
         <li class="f-drop"><a href="#"><span>Pages</span><span><i class="fa-solid fa-chevron-down"></i></span></a>
         <ul class="p-drop">
           <li><a class="p-drop-a" href="#">Blog Grid</a></li>
-          <li><a class="p-drop-a" href="#">Blog Single</a></li>
+          <li><a class="p-drop-a" href="blog-single.html">Blog Single</a></li>
           <li><a class="p-drop-a" href="sign-in.html">Sign In</a></li>
           <li><a class="p-drop-a" href="sign-up.html">Sigin Up</a></li>
           <li><a class="p-drop-a" href="404.html">404</a></li>

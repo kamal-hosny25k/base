@@ -67,6 +67,86 @@ toggle2.addEventListener("click",()=> toggle2.classList.toggle("active"));
 
 // ! Start Testimonials
 
+
+// Testimonials cards
+const carouselCard = document.querySelector("#carousel");
+
+
+let cardTestimonials =[{
+    id:"1" ,
+    img:"img/testimonial.png" ,
+    p:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat quis enim sed, ullamcorper semper ligula. Mauris consequat justo volutpat.",
+    name:"Devid Smith",
+    email:"Founter @democompany",
+},
+{
+    id:"2" ,
+    img:"img/blog-02.png" ,
+    p:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat quis enim sed, ullamcorper semper ligula. Mauris consequat justo volutpat.",
+    name:"Devid Smith",
+    email:"Founter @democompany",
+},
+{
+    id:"3" ,
+    img:"img/Testimonials-3.jpeg" ,
+    p:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat quis enim sed, ullamcorper semper ligula. Mauris consequat justo volutpat.",
+    name:"Devid Smith",
+    email:"Founter @democompany",
+},
+{
+    id:"4" ,
+    img:"img/Testimonials-4.jpeg" ,
+    p:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat quis enim sed, ullamcorper semper ligula. Mauris consequat justo volutpat.",
+    name:"Devid Smith",
+    email:"Founter @democompany",
+},
+];
+
+
+
+const generatecarouselCard =() =>{
+    return (carouselCard.innerHTML =cardTestimonials
+        .map((x)=>{
+            let{id ,img ,p ,name ,email} = x ;
+            return`
+            
+            <!-- ${id} -->
+                <li class="card">
+                    <div class="img"><img src=${img} alt="" dragging="false"></div>
+                    <div class="info-text">
+                    <i class="fa-solid fa-quote-left quote"></i>
+                    <p><i>${p}</i></p>
+                    <div class="footer-info">
+                        <div class="email">
+                            <h3>${name}</h3>
+                            <h4>${email}</h4>
+                        </div>
+                        <h2><i class="fa-solid fa-location-dot"></i> dropcam </h2>
+                    </div>
+                </div>
+            </li>
+            <!-- end ${id} -->
+            `
+        }).join(""));
+};
+generatecarouselCard()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//
 const wrapper = document.querySelector(".wrapper");
 const carousel = document.querySelector(".carousel");
 const firstCardWidth = carousel.querySelector(".card").offsetWidth;
@@ -151,3 +231,5 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
+
+// ! End Testimonials

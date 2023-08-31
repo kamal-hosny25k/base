@@ -40,9 +40,50 @@ width: 100px;
 top: 50%;
 right: 150px;
 }
+@media (max-width:991px){
+    .error .shape-3{
+        display: none;
+    }
+}
 .error .container{
     
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
+}
+.error .container .card{
+    max-width: 550px;
+    position: relative;
+}
+.error .container .card h1{
+    font-size: 200px;
+    margin: 0;
+    margin-bottom: 20px;
+    color: #4e6bff;
+}
+.error .container .card h5{
+    font-size: 36px;
+    color: var(--section-color-1);
+    margin-bottom: 20px;
+
+}
+.error .container .card p{
+    font-size: 18px;
+    line-height: 30px;
+    word-spacing: 3px;
+    color: var(--section-color-2);
+    margin-bottom: 40px;
+
+}
+.error .container .card a{
+    margin-top: 30px;
+    padding: 12px 30px;
+    background-color: #4e6bff;
+    color: #fff;
+    border-radius: 100px;
+    transition: var(--main-transition);
+}
+.error .container .card a:hover{
+    box-shadow: 0px 5px 12px 0px #4e6bff;
 }

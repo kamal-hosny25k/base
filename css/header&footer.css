@@ -78,7 +78,25 @@ ul {
     margin-left: auto;
     margin-right: auto;
   }
-
+/* Small */
+@media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  
   .main-title{
     display: flex;
     justify-content: center;
@@ -990,7 +1008,7 @@ body.dark .footer .container .box-1 ul.social li a{
 display: flex;
 justify-content: space-between;
 align-items: flex-start;
-gap: 70px;
+gap: 50px;
 }
 .footer .container .box-2 ul.footer-ul li{
 display: flex;
