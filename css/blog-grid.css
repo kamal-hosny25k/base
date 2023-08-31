@@ -1,0 +1,18 @@
+.header .container .sign a {
+    color: var(--section-color-1);
+}
+.header .container .sign a:hover{
+    color: #4e6bff !important;
+}
+body .header.add {
+    background-color: var(--background-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 4px 0px;
+}
+/* ! Start blog-grid */
+.blog-grid{
+    position: relative;
+    padding: 200px 0px 100px;
+    background-color: var(--background-color2);
+}
+
+/* ! End blog-grid */

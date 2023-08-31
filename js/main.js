@@ -21,48 +21,26 @@ textLoad()
 setInterval(textLoad,12000 );
 
 const toggle2 = document.querySelector(".toggle-2");
-const head = document.querySelectorAll(".head")
-const annually = document.querySelectorAll(".annually")
-console.log(head)
-console.log(head[0].innerHTML)
 
+function check(){
 
+    const checkbox = document.querySelector("#checkbox");
+    const headOne = document.querySelector(".head-1");
+    const headTwo = document.querySelector(".head-2");
+    const headThere = document.querySelector(".head-3");
 
-
-
-
-
-toggle2.addEventListener("click",() =>{    
-
-        if ( head[0].innerHTML ===  `<h2>$29</h2><span>/per month</span>`){
-            head[0].innerHTML =`<h2>$149</h2><span>/per year</span>`;
-        }else{
-            head[0].innerHTML =  `<h2>$29</h2><span>/per month</span>`;
-        }
-
-        
-        if(head[1].innerHTML ===  `<h2>$59</h2><span>/per month</span>`){
-            head[1].innerHTML =`<h2>$608</h2><span>/per year</span>`;
-        }else{
-            head[1].innerHTML =  `<h2>$59</h2><span>/per month</span>`;
-        }
-
-        
-        if(head[2].innerHTML ===  `<h2>$139</h2><span>/per month</span>`){
-            head[2].innerHTML =`<h2>$1568</h2><span>/per year</span>`;
-        }else{
-            head[2].innerHTML =  `<h2>$139</h2><span>/per month</span>`;
-        }
-})
-
-
+    if(checkbox.checked == true){
+        headOne.innerHTML = `<h2>$149</h2><span>/per year</span>`;
+        headTwo.innerHTML = `<h2>$608</h2><span>/per year</span>`;
+        headThere.innerHTML = `<h2>$1568</h2><span>/per year</span>`;
+    } else{
+        headOne.innerHTML = `<h2>$29</h2><span>/per month</span>`;
+        headTwo.innerHTML = `<h2>$59</h2><span>/per month</span>`;
+        headThere.innerHTML = `<h2>$139</h2><span>/per month</span>`;
+    }
+}
 
 toggle2.addEventListener("click",()=> toggle2.classList.toggle("active"));
-
-
-// function myToggle(){
-//     if(head[0].innerHTML ==="")
-// }
 
 
 // ! Start Testimonials
