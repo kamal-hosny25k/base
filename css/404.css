@@ -1,0 +1,48 @@
+.header .container .sign a {
+    color: var(--section-color-1);
+}
+.header .container .sign a:hover{
+    color: #4e6bff !important;
+}
+body .header.add {
+    background-color: var(--background-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 1px 4px 0px;
+}
+/* ! Start Sign-in */
+.error{
+    position: relative;
+    padding: 200px 0px 100px;
+    background-color: var(--background-color2);
+}
+.error .shape-1{
+    position: absolute;
+    width: 50px;
+    height: 100px;
+    background-color: #ffdd0f;
+    left: 30px;
+    top: 300px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+.error .shape-2{
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background-color: #f36a8d;
+    bottom: 100px;
+    right: 30px;
+    border-top-right-radius: 100px ;
+    border-top-left-radius: 100px ;
+}
+.error .shape-3{
+position: absolute;
+width: 100px;
+top: 50%;
+right: 150px;
+}
+.error .container{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
