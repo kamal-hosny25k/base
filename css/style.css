@@ -627,7 +627,9 @@ gap: 10px;
     gap: 40px;
     flex-wrap: wrap;
 }
-
+.our-creative .container .cards .card{
+    max-width: 330px;
+}
 .our-creative .container .cards .card .image{
 position: relative;
 overflow: hidden;
@@ -771,7 +773,7 @@ z-index: 2;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 0px;
 }
 .quality .container .boxs .box{
 display: flex;
@@ -779,7 +781,7 @@ flex-direction: column;
 gap: 35px;
 padding: 40px;
 border-radius: 4px;
-width: 400px;
+width: 380px;
 transition: var(--main-transition);
 }
 .quality .container .boxs .box:hover{
@@ -1265,7 +1267,12 @@ flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+}
+@media (max-width:1200px){
+    .blog-news .cards{
+        flex-wrap: wrap;
+}
 }
 .blog-news .cards .card{
     border-radius: 5px;
