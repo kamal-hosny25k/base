@@ -9,23 +9,24 @@
     <title>base</title>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/normalizw.css">
+    <link rel="stylesheet" href="css/header&footer.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
     <link rel="icon" href="img/logo.png">
 
     
   </head>
   <body>
     <!-- Start Header -->
-    <div class="header">
+    <div class="header" id="header">
       <div class="container">
         <i class="fa-solid fa-bars sideberOpen"></i>
 
-        <span class="logo navLogo"><a href="#"><img src="img/logo.png" alt=""><p>Base</p></a></span>
+        <span class="logo navLogo"><a href="index.html"><img src="img/logo.png" alt=""><p>Base</p></a></span>
 
         <div class="menu">
           <div class="logo-toggle">
-            <span class="logo"><a href="#">Base</a></span>
+            <span class="logo"><a href="index.html">Base</a></span>
             <i class="fa-solid fa-x siderbarClose"></i>
           </div>
           <ul class="nav-links">
@@ -35,26 +36,25 @@
             <ul class="p-drop">
               <li><a class="p-drop-a" href="#">Blog Grid</a></li>
               <li><a class="p-drop-a" href="#">Blog Single</a></li>
-              <li><a class="p-drop-a" href="#">Sign In</a></li>
-              <li><a class="p-drop-a" href="#">Sigin Up</a></li>
+              <li><a class="p-drop-a" href="sign-in.html">Sign In</a></li>
+              <li><a class="p-drop-a" href="sign-up.html">Sigin Up</a></li>
               <li><a class="p-drop-a" href="#">404</a></li>
             </ul>
           </li>
             <li><a href="#">Support</a></li>
             <li class="sign f-drop-sign">
-              <a class="f-drop-sign-a" href="#">Sign In</a>
-              <a class="f-drop-sign-a" href="#">Sign Up</a>
+              <a class="f-drop-sign-a" href="sign-in.html">Sign In</a>
+              <a class="f-drop-sign-a" href="sign-up.html">Sign Up</a>
             </li>
           </ul>
         </div>
         <div class="sign">
           <div class="toggle"></div>
-          <a href="#">Sign In</a>
-          <a href="#">Sign Up</a>
+          <a href="sign-in.html">Sign In</a>
+          <a href="sign-up.html">Sign Up</a>
         </div>
         </div>
       </div>
-    </div>
 
     <!-- // End Header -->
     <!-- Start Landing -->
@@ -616,7 +616,7 @@
                   <textarea name="Message" placeholder="Message"></textarea>
               </div>
               <div class="box3">
-                <input type="submit" value="Send Message">
+                <input type="submit" value="Send">
               </div>
             </form>
           </div>
@@ -638,7 +638,7 @@
     </div>
     <!-- End Startups -->
     <!-- Start Footer -->
-    <div class="footer">
+    <div class="footer" id="footer">
       <div class="container">
         <div class="box-1">
             <a class="logo" href="index.html">            
@@ -696,7 +696,7 @@
         </div>
       </div>
     </div>
-    <div class="end-footer">
+    <div class="end-footer" id="end-footer">
       <div class="container">
         <ul>
           <li><a href="#">English</a></li>
@@ -708,6 +708,7 @@
     </div>
     <!-- End Footer -->
     <!-- script JS  -->
+    <script src="js/header&footer.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
