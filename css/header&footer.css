@@ -937,6 +937,55 @@ body .header .container  .f-drop-sign{
 
 
 
+/* Start Startups */
+.startups{
+    padding: 70px 0;
+    background-color: #4e6bff;
+    position: relative;
+    background-image: url("/img/shape-08.svg");
+    background-position: 100% right;
+    background-repeat: no-repeat;
+}
+.startups .box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.startups .box .info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    color: #fff;
+    flex-direction: column;
+    max-width: 620px;
+    gap: 20px;
+}
+.startups .box .info h3{
+    font-size: 40px;
+}
+.startups .box .info p{
+    font-size: 16px;
+    word-spacing: 1.6px;
+    line-height: 24px;
+    color: v;
+}
+.startups .box a{
+    padding: 12px 30px;
+    background-color: #fff;
+    color: #18191a;
+    border-radius: 100px;
+}
+@media (max-width:992px){
+    .startups .box{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 50px;
+    }
+    .startups .box .info h3{
+        font-size: 30px;
+    }
+}
+/* End Startups */
 
 
 

@@ -97,7 +97,24 @@ window.onscroll =() =>{
 
 
 
+// ? Start Startups
+const startups = document.querySelector("#startups");
 
+generateStartups = () =>{
+    return startups.innerHTML =`
+    <div class="container">
+        <div class="box">
+            <div class="info">
+                <h3>Join with 5000+ Startups Growing with Base.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quis nibh lorem. Duis sed odio lorem. In a efficitur leo. Ut venenatis rhoncus.</p>
+            </div>
+            <a href="#">Get Started Now</a>
+        </div>
+    </div>
+    `
+}
+generateStartups()
+// ? End Startups
 
 
 
