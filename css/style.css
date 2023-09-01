@@ -932,14 +932,7 @@ transition: var(--main-transition);
     color: var(--section-color-1);
     font-weight: 600;
 } 
-.prices .container .tables .table .head{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    width: 100%;
 
-} 
 .prices .container .tables .table .head-1,
 .prices .container .tables .table .head-2,
 .prices .container .tables .table .head-3{
@@ -948,13 +941,17 @@ transition: var(--main-transition);
     width: 100%;
     align-items: center;
     justify-content: center;
+    color: var(--section-color-1);
+
+    
 }
-.prices .container .tables .table .head h2{
+.prices .container .tables .table .head h2
+{
     font-size: 40px;
     color: var(--section-color-1);
 } 
 .prices .container .tables .table .head span{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 300;
     color: var(--section-color-1);
 } 
@@ -997,6 +994,77 @@ transition: var(--main-transition);
     color: var(--section-color-1);
 } 
 /* ! End Prices */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ! Start filter */
 .filter{
     position: relative;
@@ -1004,9 +1072,179 @@ transition: var(--main-transition);
     background-color: var(--background-color);
 }
 .filter .container{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.filter .container .Switcher{
+    display: flex;
+    padding: 10px;
+    background-color: var(--background-color2);
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    border-radius: 100px;
+    gap: 10px;
+}
+.filter .container .Switcher li{
+    padding: 7px 20px;
+    border-radius: 100px;
+    color: var(--section-color-2);
+    cursor: pointer;
+}
+.filter .container .Switcher li.active{
+    background-color: #4e6bff ;
+    color: #fff;
+}
+.filter .container .cards{
+    margin-top: 60px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.filter .container .cards .card{
+}
+.filter .container .cards .card .image{
+    height: 230px;
+    width: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.filter .container .cards .card .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.filter .container .cards .card .image .card-info{
+    
+    position: absolute;
+    bottom: -330px;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    backdrop-filter: blur(6px);
+    background-color: rgba(255, 254, 254, 0.103);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    transition: 0.8s;
+}
+.filter .container .cards .card .image:hover .card-info{
+    bottom: -5px;
+}
+.filter .container .cards .card h5{
+    font-size: 24px;
+    color: #000;
+}
+.filter .container .cards .card p{
+    font-size: 16px;
+    color: #717171;
+}
+.filter .container .cards .card a i {
+    background-color: #4e6bff;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 50%;
 }
 /* ! End filter */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ! Start testimonials */
 .testimonials{
     position: relative;

@@ -211,3 +211,96 @@ wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
 
 // ! End Testimonials
+
+// ! Start Filter
+const cardFilter =document.querySelector("#cardFilter");
+// ! End Filter
+
+
+
+
+
+
+
+
+
+let dataFilter =[{
+    id:"1" ,
+    className: "card all Digital " ,
+    img:"img/project-01.png",
+},
+{
+    id:"2" ,
+    className: "card  all Digital" ,
+    img:"img/blog-11.jpg",
+},{
+    id:"3" ,
+    className: "card  all Eco" ,
+    img:"img/blog-25.jpg",
+},{
+    id:"4" ,
+    className: "card  all Digital" ,
+    img:"img/blog-21.jpg",
+},{
+    id:"5" ,
+    className: "card  all Eco" ,
+    img:"img/blog-13.jpg",
+},{
+    id:"6" ,
+    className: "card  all Brand" ,
+    img:"img/blog-16.jpg",
+},
+
+]
+
+
+
+
+const Filtergenerate =() =>{
+    return (cardFilter.innerHTML = dataFilter
+        .map((x)=>{
+            let{id , className,img } = x ;
+            return`
+            
+            <!-- ${id} -->
+            <div class="${className}">
+            <div class="image">
+                <img src=${img} alt="">
+                <div class="card-info">
+                    <h5>Photo Retouching</h5>
+                    <p>Branded Ecommerce</p>
+                <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+            </div>
+        </div>
+            <!-- end ${id} -->
+            `
+        }).join(""));
+};
+Filtergenerate();
+
+
+let SwitcherLis = document.querySelectorAll(".Switcher li");
+let cards = Array.from(document.querySelectorAll(".filter .card"));
+
+SwitcherLis.forEach((li)=>{
+    li.addEventListener("click", removeActive);
+    li.addEventListener("click", manageImg);
+});
+// Remove Avtive
+function removeActive() {
+    SwitcherLis.forEach((li)=>{
+        li.classList.remove("active");
+        this.classList.add("active");
+    });
+}
+
+// Manage Imgs
+function manageImg(){
+    cards.forEach((card)=>{
+        card.style.display ="none";
+    });
+    document.querySelectorAll(this.dataset.cat).forEach((el) => {
+        el.style.display ="block";
+    })
+};
