@@ -16,8 +16,8 @@ generateheader = () =>{
         <i class="fa-solid fa-x siderbarClose"></i>
       </div>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Features</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html">Features</a></li>
         <li class="f-drop"><a href="#"><span>Pages</span><span><i class="fa-solid fa-chevron-down"></i></span></a>
         <ul class="p-drop">
           <li><a class="p-drop-a" href="blog-grid.html">Blog Grid</a></li>
@@ -27,7 +27,7 @@ generateheader = () =>{
           <li><a class="p-drop-a" href="404.html">404</a></li>
         </ul>
       </li>
-        <li><a href="#">Support</a></li>
+        <li><a href="index.html">Support</a></li>
         <li class="sign f-drop-sign">
           <a class="f-drop-sign-a" href="sign-in.html">Sign In</a>
           <a class="f-drop-sign-a" href="sign-up.html">Sign Up</a>
