@@ -108,11 +108,85 @@ border-top: 2px solid var(--background-color2);
     border: 2px solid var(--background-color2);
     border-left: none;
     border-right: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .profile .settings .header-settings .links-settings li a.active{
     background-color: #4e6bff;
     color: #fff;
 }
+
+
+
+
+
+
+
+
+@media (max-width:768px){
+
+    .profile .settings .header-settings{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .profile .settings .header-settings .links-settings li a span{
+        display: none;
+    }
+    .profile .settings .header-settings .icon .upload{
+        width: 45px;
+    }
+    .profile .settings .header-settings .icon .upload img{
+        width: 45px;
+        height: 45px;
+        border: 2px solid var(--background-color2);
+    }
+    .profile .settings .header-settings .icon .upload .round{
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+    .profile .settings .header-settings .icon h3{
+        font-size: 8px;
+        margin: 10px 0;
+    }
+    .profile .settings .header-settings{
+        flex-basis: 0;
+    }
+}
+@media (max-width:576px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ? end header-settings*/
 /* ? start body-settings */
 .profile .settings .body-settings{
@@ -244,5 +318,6 @@ border-top: 2px solid var(--background-color2);
     flex-direction: column;
     }
 }
+
 /* ? end body-settings */
 /* ! End profile */
