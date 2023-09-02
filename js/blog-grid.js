@@ -9,7 +9,7 @@ let currentStep = 0;
 
 // Function to update the button states
 const updateBtn = () => {
-    count()
+    count();
     // If we are at the last step
     if ( currentStep === 4 ) {
         endBtn.disabled = true ;
@@ -68,7 +68,6 @@ startBtn.addEventListener("click", () => {
     endBtn.disabled = false;
     prevNext[1].disabled = false;
 });
-
   // Add event listener to the "End" button
 endBtn.addEventListener("click", () => {
     // Remove the "active" class from the previously active number link
@@ -80,18 +79,9 @@ endBtn.addEventListener("click", () => {
     startBtn.disabled = false;
     prevNext[0].disabled = false;
 });
-
-
-
 // ?  count  //
-
 const blogGridCards = document.querySelector("#blog-grid-cards");
-
-
 function count(){
-
-
-
     if( currentStep === 0){
         //!  0  //
         let cardsPagination =[{
@@ -478,10 +468,9 @@ function count(){
         };
         
         generatePagination();
-    }
-}
+    };
+};
 // ? load
-
   //!  0  //
   let cardsPagination =[{
     id:"1",
