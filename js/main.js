@@ -373,3 +373,60 @@ function startCount(el) {
 
 
 // ! End Counter
+
+// ! Start choose-us
+
+function show(){
+    let popup = document.querySelector(".popup");
+    popup.classList.toggle("active");
+}
+
+let myDocument = document.documentElement;
+let expand = document.querySelector(".expand");
+
+
+
+
+
+expand.addEventListener("click", ()=>{
+
+    if(expand.classList.contains("fa-expand")){
+        expand.classList.replace("fa-expand", "fa-compress");
+        // window
+        if (myDocument.requestFullscreen) {
+            myDocument.requestFullscreen();
+        } 
+        else if (myDocument.msRequestFullscreen) {
+            myDocument.msRequestFullscreen();
+        } 
+        else if (myDocument.mozRequestFullScreen) {
+            myDocument.mozRequestFullScreen();
+        }
+        else if(myDocument.webkitRequestFullscreen) {
+            myDocument.webkitRequestFullscreen();
+        }
+    }else{
+        expand.classList.replace("fa-compress", "fa-expand");
+        // window
+        if(document.exitFullscreen) {
+            document.exitFullscreen();
+        }
+        else if(document.msexitFullscreen) {
+            document.msexitFullscreen();
+        }
+        else if(document.mozexitFullscreen) {
+            document.mozexitFullscreen();
+        }
+        else if(document.webkitexitFullscreen) {
+            document.webkitexitFullscreen();
+        }
+    }
+
+});
+
+
+
+
+
+
+// ! End choose-us
