@@ -1,3 +1,6 @@
+.header .container .nav-links li:nth-child(3) a{
+    color: #4e6bff;
+}
 .header .container .sign a {
     color: var(--section-color-1);
 }

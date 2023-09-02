@@ -84,14 +84,18 @@ siderbarClose.addEventListener("click", e =>{
 
 
 // scroll
-window.onscroll =() =>{
+
+
+
+
+window.addEventListener("scroll",()=>{
     // console.log(this.scrollY)
     if(this.scrollY >= 100){
         nav.classList.add("add");
     }else{
         nav.classList.remove("add")
     }
-}
+});
 // ? End header
 
 

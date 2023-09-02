@@ -59,23 +59,23 @@ let cardTestimonials =[{
 },
 {
     id:"2" ,
-    img:"img/blog-02.png" ,
+    img:"img/Testimonial--1.jpg" ,
     p:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat quis enim sed, ullamcorper semper ligula. Mauris consequat justo volutpat.",
-    name:"Devid Smith",
+    name:"jimmy",
     email:"Founter @democompany",
 },
 {
     id:"3" ,
-    img:"img/Testimonials-3.jpeg" ,
+    img:"img/Testimonial--2.jpg" ,
     p:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat quis enim sed, ullamcorper semper ligula. Mauris consequat justo volutpat.",
-    name:"Devid Smith",
+    name:"joseph",
     email:"Founter @democompany",
 },
 {
     id:"4" ,
     img:"img/Testimonials-4.jpeg" ,
     p:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dolor diam, feugiat quis enim sed, ullamcorper semper ligula. Mauris consequat justo volutpat.",
-    name:"Devid Smith",
+    name:"gojo satoru",
     email:"Founter @democompany",
 },
 ];
@@ -226,8 +226,8 @@ const cardFilter =document.querySelector("#cardFilter");
 
 let dataFilter =[{
     id:"1" ,
-    className: "card all Digital " ,
-    img:"img/project-01.png",
+    className: "card all Eco " ,
+    img:"img/cat-1.jpg",
 },
 {
     id:"2" ,
@@ -236,19 +236,45 @@ let dataFilter =[{
 },{
     id:"3" ,
     className: "card  all Eco" ,
-    img:"img/blog-25.jpg",
+    img:"img/cat-2.jpg",
 },{
     id:"4" ,
-    className: "card  all Digital" ,
-    img:"img/blog-21.jpg",
+    className: "card  all Brand" ,
+    img:"img/books-1.jpg",
 },{
     id:"5" ,
-    className: "card  all Eco" ,
-    img:"img/blog-13.jpg",
-},{
+    className: "card  all Digital" ,
+    img:"img/blog-9.jpg",
+}
+,{
     id:"6" ,
     className: "card  all Brand" ,
-    img:"img/blog-16.jpg",
+    img:"img/books-2.jpg",
+},
+,{
+    id:"7" ,
+    className: "card  all Eco" ,
+    img:"img/cat-4.jpg",
+},
+,{
+    id:"8" ,
+    className: "card  all Brand" ,
+    img:"img/books-3.jpg",
+},
+,{
+    id:"9" ,
+    className: "card  all Digital" ,
+    img:"img/blog-20.jpg",
+},
+,{
+    id:"10" ,
+    className: "card  all Digital" ,
+    img:"img/blog-3.jpg",
+},
+,{
+    id:"10" ,
+    className: "card  all Digital" ,
+    img:"img/blog-27.jpg",
 },
 
 ]
@@ -302,5 +328,48 @@ function manageImg(){
     });
     document.querySelectorAll(this.dataset.cat).forEach((el) => {
         el.style.display ="block";
-    })
+    });
 };
+
+
+
+// ! Start Counter
+let nums = document.querySelectorAll(".counter .nums .num");
+let section  = document.querySelector("#counter");
+let started  = false; //Function Started ? No
+
+
+
+
+
+console.log(nums);
+console.log(section);
+
+window.addEventListener("scroll",()=>{
+    if (window.scrollY >= section.offsetTop) {
+        if (!started) {
+            nums.forEach((num) => startCount(num));
+        }
+            started = true;
+        }
+})
+
+
+
+
+
+
+
+function startCount(el) {
+    let goal = el.dataset.goal;
+    let count = setInterval(()=>{
+        el.textContent ++ ;
+        if(el.textContent === goal){
+            clearInterval(count);
+        }
+    }, 2000/goal );
+};
+
+
+
+// ! End Counter

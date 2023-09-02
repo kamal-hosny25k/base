@@ -974,6 +974,11 @@ body .header .container  .f-drop-sign{
     background-color: #fff;
     color: #18191a;
     border-radius: 100px;
+    transition: var(--main-transition);
+}
+.startups .box a:hover{
+    background-color: #18191a;
+    color: #fff;
 }
 @media (max-width:992px){
     .startups .box{

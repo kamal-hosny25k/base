@@ -11,11 +11,15 @@
     <link rel="stylesheet" href="css/normalizw.css">
     <link rel="stylesheet" href="css/header&footer.css">
     <link rel="stylesheet" href="css/sign.css">
-    <link rel="stylesheet" href="css/sign-up.css">
     <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
     <link rel="icon" href="img/logo.png">
+    <style>
+      .create-password,
+      .confirm-password {
+      margin-bottom: 10px; 
+}
 
-    
+    </style>
   </head>
   <body>
     <!-- Start Header -->
@@ -70,7 +74,7 @@
       <!-- ? End-email -->
       <!-- ? Start create-password -->
       <div class="field create-password">
-        <div class="input-field ">
+        <div class="input-field password-cont">
           <label>Password</label>
           <input type="password" placeholder="Create password" class="password">
           <i class="bx bx-hide show-hide"></i>
@@ -89,8 +93,8 @@
 
     <!-- ? End create-password -->
       <!-- ? Start confirm-password -->
-      <div class="field confirm-password">
-        <div class="input-field ">
+      <div class="field confirm-password ">
+        <div class="input-field password-cont">
           <label>Confirm Password</label>
           <input type="password" placeholder="Confirm password" class="cPassword">
           <i class="bx bx-hide show-hide"></i>
@@ -109,7 +113,7 @@
 
     <!-- ? End confirm-password -->
     <!-- ? start submit-->
-    <div class="input-field button">
+    <div class="input-field button ">
       <input type="submit" value="Submit Now" />
     </div>
     <!-- ? End submit-->
