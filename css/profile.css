@@ -20,7 +20,7 @@ body .header.add {
 /* ! Start profile */
 .profile{
     position: relative;
-    padding: 200px 0px 100px;
+    padding: 100px 0px;
     background-color: var(--background-color2);
 }
 .profile .container{

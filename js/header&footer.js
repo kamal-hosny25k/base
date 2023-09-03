@@ -2,50 +2,142 @@ let header = document.getElementById("header");
 let footer = document.getElementById("footer");
 let endFooter = document.getElementById("end-footer");
 
-// ? Start header
-generateheader = () =>{
-    return header.innerHTML =`
-    <div class="container">
-    <i class="fa-solid fa-bars sideberOpen"></i>
 
-    <span class="logo navLogo"><a href="index.html"><img src="img/logo.png" alt=""><p>Base</p></a></span>
 
-    <div class="menu">
-      <div class="logo-toggle">
-        <span class="logo"><a href="index.html">Base</a></span>
-        <i class="fa-solid fa-x siderbarClose"></i>
-      </div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="index.html">Features</a></li>
-        <li class="f-drop"><a href="#"><span>Pages</span><span><i class="fa-solid fa-chevron-down"></i></span></a>
-        <ul class="p-drop">
-          <li><a class="p-drop-a" href="blog-grid.html">Blog Grid</a></li>
-          <li><a class="p-drop-a" href="blog-single.html">Blog Single</a></li>
-          <li><a class="p-drop-a" href="sign-in.html">Sign In</a></li>
-          <li><a class="p-drop-a" href="sign-up.html">Sigin Up</a></li>
-          <li><a class="p-drop-a" href="profile.html">profile</a></li>
-          <li><a class="p-drop-a" href="404.html">404</a></li>
-        </ul>
-      </li>
-        <li><a href="index.html">Support</a></li>
-        <li class="sign f-drop-sign">
-          <a class="f-drop-sign-a" href="sign-in.html">Sign In</a>
-          <a class="f-drop-sign-a" href="sign-up.html">Sign Up</a>
-        </li>
-      </ul>
-    </div>
-    <div class="sign">
-      <div class="toggle"></div>
-      <a href="sign-in.html">Sign In</a>
-      <a href="sign-up.html">Sign Up</a>
-    </div>
-    </div>
-    `;
+let login = true ;
+if(login === false){
+    // if false Header without login
+    generateheader = () =>{
+        return header.innerHTML =`
+        <div class="container">
+        <i class="fa-solid fa-bars sideberOpen"></i>
+    
+        <span class="logo navLogo"><a href="index.html"><img src="img/logo.png" alt=""><p>Base</p></a></span>
+    
+        <div class="menu">
+          <div class="logo-toggle">
+            <span class="logo"><a href="index.html">Base</a></span>
+            <i class="fa-solid fa-x siderbarClose"></i>
+          </div>
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">Features</a></li>
+            <li class="f-drop"><a href="#"><span>Pages</span><span><i class="fa-solid fa-chevron-down"></i></span></a>
+            <ul class="p-drop">
+              <li><a class="p-drop-a" href="blog-grid.html">Blog Grid</a></li>
+              <li><a class="p-drop-a" href="blog-single.html">Blog Single</a></li>
+              <li><a class="p-drop-a" href="sign-in.html">Sign In</a></li>
+              <li><a class="p-drop-a" href="sign-up.html">Sigin Up</a></li>
+              <li><a class="p-drop-a" href="profile.html">profile</a></li>
+              <li><a class="p-drop-a" href="404.html">404</a></li>
+            </ul>
+          </li>
+            <li><a href="index.html">Support</a></li>
+            <li class="sign f-drop-sign">
+              <a class="f-drop-sign-a" href="sign-in.html">Sign In</a>
+              <a class="f-drop-sign-a" href="sign-up.html">Sign Up</a>
+            </li>
+          </ul>
+        </div>
+        <div class="sign">
+          <div class="toggle"></div>
+          <a href="sign-in.html">Sign In</a>
+          <a href="sign-up.html">Sign Up</a>
+        </div>
+        </div>
+        `;
+    };
+    generateheader();
+}else{
+    // if true Header without login
+    generateheader = () =>{
+        return header.innerHTML =`
+        <div class="container">
+            <i class="fa-solid fa-bars sideberOpen"></i>
+        
+            <span class="logo navLogo"><a href="index.html"><img src="img/logo.png" alt=""><p>Base</p></a></span>
+        
+            <div class="menu">
+              <div class="logo-toggle">
+                <span class="logo"><a href="index.html">Base</a></span>
+                <i class="fa-solid fa-x siderbarClose"></i>
+              </div>
+              <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Features</a></li>
+                <li class="f-drop"><a href="#"><span>Pages</span><span><i class="fa-solid fa-chevron-down"></i></span></a>
+                <ul class="p-drop">
+                  <li><a class="p-drop-a" href="blog-grid.html">Blog Grid</a></li>
+                  <li><a class="p-drop-a" href="blog-single.html">Blog Single</a></li>
+                  <li><a class="p-drop-a" href="sign-in.html">Sign In</a></li>
+                  <li><a class="p-drop-a" href="sign-up.html">Sigin Up</a></li>
+                  <li><a class="p-drop-a" href="profile.html">profile</a></li>
+                  <li><a class="p-drop-a" href="404.html">404</a></li>
+                </ul>
+              </li>
+                <li><a href="index.html">Support</a></li>
+                <li><a href="profile.html">Profile</a></li>
+              </ul>
+            </div>
+            <div class="sign">
+              <div class="toggle"></div>
+              <!-- ? -->
+              <img onclick="openSubMenu()" src="img/Testimonials-4.jpeg" class="user-pic">
+
+
+              <div class="sub-menu-wrap">
+                <div class="sub-menu">
+                  <div class="user-info">
+                    <img src="img/Testimonials-4.jpeg">
+                    <h2>kamal hosny</h2>
+                  </div>
+                  <hr>
+                  <!--  -->
+                  <a href="profile.html" class="sub-menu-link">
+                    <i class='bx bxs-edit icon-menu' ></i>
+                    <p>Edit Profile</p>
+                    <i class="fa-solid fa-arrow-right arrow"></i>
+                  </a>
+                  <!--  -->
+                  <!--  -->
+                  <a href="profile-Password.html" class="sub-menu-link">
+                    <i class='bx bx-cog icon-menu'></i>
+                    <p>Settings & Privacy</p>
+                    <i class="fa-solid fa-arrow-right arrow"></i>
+                  </a>
+                  <!--  -->
+                  <!--  -->
+                  <a href="#" class="sub-menu-link">
+                    <i class='bx bx-brush icon-menu'></i>
+                    <p>Help & Support</p>
+                    <i class="fa-solid fa-arrow-right arrow"></i>
+                  </a>
+                  <!--  -->
+                  <!--  -->
+                  <a href="#" class="sub-menu-link">
+                    <i class='bx bx-log-out icon-menu' ></i>
+                    <p>Logout</p>
+                    <i class="fa-solid fa-arrow-right arrow"></i>
+                  </a>
+                  <!--  -->
+                </div>
+              </div>
+              <!-- ? -->
+            </div>
+            </div>
+        `;
+    };
+    generateheader();
 };
-generateheader();
 
-//
+/* login Header toggle */
+let subMenuWrap = document.querySelector(".sub-menu-wrap");
+function openSubMenu(){
+    subMenuWrap.classList.toggle("open-menu");
+};
+// 
+
+// ? Start header
 
 const body = document.querySelector("body");
 const toggle = document.querySelector(".toggle");
@@ -58,29 +150,29 @@ const siderbarClose = document.querySelector(".siderbarClose");
 let getMode = localStorage.getItem("mode");
 if( getMode && getMode === "dark"){
     body.classList.add("dark");
-    toggle.classList.add("active")
-}
+    toggle.classList.add("active");
+};
 toggle.addEventListener("click",() => {
-    body.classList.toggle("dark")
+    body.classList.toggle("dark");
 
     if(!body.classList.contains("dark")){
         return localStorage.setItem("mode", "light");
-    }
+    };
     localStorage.setItem("mode", "dark");
-})
+});
 
 toggle.addEventListener("click",()=> toggle.classList.toggle("active"));
 
 // siderbarOpen
 siderbarOpen.addEventListener("click",()=>{
-    nav.classList.add('active')
+    nav.classList.add('active');
 });
 siderbarClose.addEventListener("click", e =>{
     let clickElm = e.target;
 
     if(!clickElm.classList.contains("sideberOpen") && !clickElm.classList.contains("menu") ){
-        nav.classList.remove('active')
-    }
+        nav.classList.remove('active');
+    };
 });
 
 
@@ -94,8 +186,8 @@ window.addEventListener("scroll",()=>{
     if(this.scrollY >= 100){
         nav.classList.add("add");
     }else{
-        nav.classList.remove("add")
-    }
+        nav.classList.remove("add");
+    };
 });
 // ? End header
 
@@ -118,7 +210,7 @@ generateStartups = () =>{
     </div>
     `
 }
-generateStartups()
+generateStartups();
 // ? End Startups
 
 
@@ -202,3 +294,4 @@ generateendFooter = () =>{
 generateendFooter();
 
 // ? End footer
+

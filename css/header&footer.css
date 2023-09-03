@@ -769,7 +769,7 @@ body .header.add .container .sign a:last-child{
         left: -100%;
         top: 0;
         padding: 20px;
-        background-color: #4e6bff;
+        background-color: #181c31;
         z-index: 100;
         transition: all 0.4s ease;
     }
@@ -916,6 +916,103 @@ body .header .container  .f-drop-sign{
 .header .container .nav-links .f-drop .p-drop .p-drop-a:hover{
     color: #4e6bff;
 }
+
+
+
+/* login Header */
+
+
+
+.header .sign .user-pic{
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 30px;
+}
+.header .sign .sub-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 2%;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.5s;
+    
+}
+.header .sign .sub-menu-wrap.open-menu{
+    max-height: 700px;
+}
+.header .sign .sub-menu{
+    background-color: var(--background-color2);
+    padding: 20px;
+    margin: 10px;
+}
+.header .sign .user-info{
+    display: flex;
+    align-items: center;
+}
+.header .sign .user-info h2{
+    font-weight: 500;
+    color: var(--section-color-1) ;
+}
+.header .sign .user-info img{
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+.header .sign .sub-menu hr{
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: var(--section-color-2);
+    margin: 15px 0 10px;
+}
+.header .sign .sub-menu-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--section-color-2);
+    margin: 12px 0;
+    padding: 10px 0 0 0 !important;
+    background-color: transparent !important;
+}
+
+@media (max-width:576px){
+    .header .sign .sub-menu-link{
+        display: flex !important;
+    }
+    }
+
+
+
+
+
+.header .sign .sub-menu-link p {
+    width: 100%;
+}
+.header .sign .sub-menu-link img{
+    width: 40px;
+    background: #e5e5e5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-right: 15px;
+}
+
+.header .sign .sub-menu-link .icon-menu{
+    margin: 0 5px;
+    font-size: 20px;
+}
+.header .sign .sub-menu-link .arrow{
+    font-size:22px;    
+}
+.header .sign .sub-menu-link:hover .arrow{
+    transform: translateX(5px);
+}
+.header .sign .sub-menu-link:hover p{
+    font-weight: 500;
+}
+
+
 /* ! End Header */
 
 

@@ -1,5 +1,5 @@
 const form = document.querySelector("form"),
-  emailField = form.querySelector(".email-field"),
+emailField = form.querySelector(".email-field"),
   emailInput = emailField.querySelector(".email"),
   passField = form.querySelector(".create-password"),
   passInput = passField.querySelector(".password"),
@@ -11,9 +11,9 @@ function checkEmail() {
   const emaiPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
   if (!emailInput.value.match(emaiPattern)) {
     return emailField.classList.add("invalid"); //adding invalid class if email value do not mathced with email pattern
-  }
+  };
   emailField.classList.remove("invalid"); //removing invalid class if email value matched with emaiPattern
-}
+};
 
 // Hide and show password
 const eyeIcons = document.querySelectorAll(".show-hide");
@@ -37,18 +37,19 @@ function createPass() {
 
   if (!passInput.value.match(passPattern)) {
     return passField.classList.add("invalid"); //adding invalid class if password input value do not match with passPattern
-  }
-  passField.classList.remove("invalid"); //removing invalid class if password input value matched with passPattern
-}
+  }else{
+    passField.classList.remove("invalid"); //removing invalid class if password input value matched with passPattern
+  };
+};
 
 // Confirm Password Validtion
 function confirmPass() {
   if (passInput.value !== cPassInput.value || cPassInput.value === "") {
     return cPassField.classList.add("invalid");
-  }
-  cPassField.classList.remove("invalid");
-}
-
+  }else{
+    cPassField.classList.remove("invalid");
+  };
+};
 // Calling Funtion on Form Sumbit
 form.addEventListener("submit", (e) => {
   e.preventDefault(); //preventing form submitting
@@ -65,7 +66,7 @@ form.addEventListener("submit", (e) => {
     !emailField.classList.contains("invalid") &&
     !passField.classList.contains("invalid") &&
     !cPassField.classList.contains("invalid")
-  ) {
+  ){
     location.href = form.getAttribute("action");
-  }
+  };
 });

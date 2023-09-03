@@ -56,5 +56,5 @@ form.addEventListener("submit", (e) => {
         !emailField.classList.contains("invalid") &&
         !passField.classList.contains("invalid")){
             location.href = form.getAttribute("action");
-    }
+    };
 });

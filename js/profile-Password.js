@@ -1,3 +1,11 @@
+// icon
+const inputFile = document.querySelector("#input-file");
+const iconImg = document.querySelector("#icon-img");
+
+inputFile.addEventListener("change", ()=>{
+    iconImg.src = URL.createObjectURL(inputFile.files[0]);
+});
+
 // Validtion
 
 const form = document.querySelector("form"),
@@ -41,9 +49,10 @@ function OldPass() {
   
     if (!oldPasswordInput.value.match(passPattern)) {
       return oldPasswordField.classList.add("invalid"); //adding invalid class if password input value do not match with passPattern
-    }
-    oldPasswordField.classList.remove("invalid"); //removing invalid class if password input value matched with passPattern
-  }
+    }else{
+      oldPasswordField.classList.remove("invalid"); //removing invalid class if password input value matched with passPattern
+    };
+};
 
 
 // Password Validation 2
@@ -53,18 +62,19 @@ function createPass() {
   
     if (!passInput.value.match(passPattern)) {
       return passField.classList.add("invalid"); //adding invalid class if password input value do not match with passPattern
-    }
-    passField.classList.remove("invalid"); //removing invalid class if password input value matched with passPattern
-  }
-
+    }else{
+      passField.classList.remove("invalid"); //removing invalid class if password input value matched with passPattern
+    };
+};
 
 // Confirm Password Validtion
 function confirmPass() {
     if (passInput.value !== cPassInput.value || cPassInput.value === "") {
       return cPassField.classList.add("invalid");
-    }
-    cPassField.classList.remove("invalid");
-  }
+    }else{
+      cPassField.classList.remove("invalid");
+    };
+};
   
   // Calling Funtion on Form Sumbit
   form.addEventListener("submit", (e) => {
@@ -84,5 +94,5 @@ function confirmPass() {
       !cPassField.classList.contains("invalid")
     ) {
       location.href = form.getAttribute("action");
-    }
+    };
   });

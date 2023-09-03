@@ -23,8 +23,7 @@ const updateBtn = () => {
         prevNext[1].disabled = false ;
         startBtn.disabled = false ;
         prevNext[0].disabled = false ;
-    }
-
+    };
 };
 
 // Add event listeners to the number links
@@ -38,9 +37,7 @@ numbers.forEach((number, numIndex) => {
       // Add the "active" class to the clicked number link
         number.classList.add("active");
       updateBtn(); // Update the button states
-
     });
-
 });
 
   // Add event listeners to the "Previous" and "Next" buttons
@@ -156,7 +153,7 @@ function count(){
             }).join("");
         };
         
-        generatePagination()
+        generatePagination();
     }
     else if(currentStep === 1){
         //!  1  //
@@ -233,7 +230,7 @@ function count(){
             }).join("");
         };
         
-        generatePagination()
+        generatePagination();
 
     }
     else if(currentStep === 2){
@@ -312,7 +309,7 @@ function count(){
             }).join("");
         };
         
-        generatePagination()
+        generatePagination();
     }
     else if(currentStep === 3){
         //!  3  //
@@ -387,7 +384,7 @@ function count(){
             }).join("");
         };
         
-        generatePagination()
+        generatePagination();
     }
     else if(currentStep === 4){
         //!  4  //
@@ -544,7 +541,7 @@ const generatePagination = ()=> {
     }).join("");
 };
 
-generatePagination()
+generatePagination();
 
 
 // ! End pagination
