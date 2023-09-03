@@ -4,8 +4,8 @@ let endFooter = document.getElementById("end-footer");
 
 
 
-let login = true ;
-if(login === true){
+let login = null ;
+if(login === null){
     // if false Header without login
     generateheader = () =>{
         return header.innerHTML =`
@@ -289,9 +289,30 @@ generateendFooter = () =>{
     </ul>
     <p>© 2023 Base. All rights reserved by <b>kamal</b> </p>
     </div>
+    <!-- up -->
+    <span class="up"><i class="fa-solid fa-arrow-up"></i></span>
+    <!-- up -->
     `;
 };
 generateendFooter();
 
 // ? End footer
 
+// up
+let span =document.querySelector('.up')
+window.onscroll =() =>{
+    // console.log(this.scrollY)
+    if(this.scrollY >= 1000){
+        span.classList.add('show')
+    }else{
+        span.classList.remove('show')
+    }
+}
+span.addEventListener('click',function(){
+  scroll({
+      top: 0,
+      behavior: "smooth"
+}) 
+  })
+
+// end up

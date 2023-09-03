@@ -1337,3 +1337,23 @@ gap: 40px;
         }
 }
 /* End Footer */
+
+/* up */
+.up{
+    position: fixed;
+    bottom: 10px;
+    right: -100px;
+    background-color: var(--section-color-1);
+    color: var(--background-color);
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+    display: flex;
+}
+.up.show{
+    right: 10px;
+}
+/* up */

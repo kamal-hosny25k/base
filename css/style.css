@@ -520,6 +520,25 @@ gap: 10px;
     outline: none;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+@media (max-width:991px){
+    .choose-us .container .popup iframe{
+        max-width: 940px;
+        max-height: 528px;
+    }
+}
+@media (max-width:768px){
+    .choose-us .container .popup iframe{
+        max-width: 705px;
+        max-height: 400px;
+    }
+}
+@media (max-width:576px){
+    .choose-us .container .popup iframe{
+        max-width: 540px;
+        max-height: 309px;
+    }
+}
 .choose-us .container .popup .close{
     right: 0px;
 }
@@ -809,6 +828,34 @@ border-radius: 4px;
 width: 380px;
 transition: var(--main-transition);
 }
+
+
+
+@media (max-width:991px){
+    .quality .container .boxs .box{
+        width: 45%;
+        }
+}
+
+@media (max-width:746px){
+    .quality .container .boxs .box{
+        width: 95%;
+        }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .quality .container .boxs .box:hover{
     background-color:var(--background-color2) ;
 }
@@ -1495,12 +1542,12 @@ transition: var(--main-transition);
 }
 .counter .shape-1{
     position: absolute;
-    height: 60px;
-    width: 60px;
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     border: solid 5px #ffdd0f;
     left: 40%;
-    top: 5px;
+    top: 0px;
 }
 .counter .shape-2{
     position: absolute;
@@ -1521,6 +1568,41 @@ transition: var(--main-transition);
     right: 10%;
     top: 20px;
 }
+
+
+
+@media (max-width:991px){
+    .counter .shape-1{
+        height: 40px;
+        width: 40px;
+        left: 40%;
+        top: 5px;
+    }
+    .counter .shape-2{
+        height: 40px;
+        width: 40px;
+        left: 2%;
+        bottom: 20px;
+    }
+    .counter .shape-3{
+        height: 60px;
+        width: 30px;
+        right: 2%;
+        top: 20px;
+    }
+}
+@media (max-width:768px){
+    .counter .shape-1,
+    .counter .shape-2,
+    .counter .shape-3{
+        display: none;
+    }
+}
+
+
+
+
+
 .counter .container{
     display: flex;
     justify-content: center;
@@ -1597,7 +1679,7 @@ flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 30px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 @media (max-width:1200px){
     .blog-news .cards{
@@ -1606,10 +1688,21 @@ flex-wrap: wrap;
 }
 .blog-news .cards .card{
     border-radius: 5px;
-    max-width: 400px;
+    max-width: 350px;
     background-color: var(--background-color2);
     overflow: hidden;
 }
+@media (max-width:991px){
+    .blog-news .cards .card{
+        width: 45%;
+}
+}
+@media (max-width:576px){
+    .blog-news .cards .card{
+        width: 95%;
+}
+}
+
 .blog-news .cards .card .image{
     position: relative;
     overflow: hidden;
@@ -1806,7 +1899,7 @@ gap: 36px;
 .connected .container  .form form .box1 .email input,
 .connected .container  .form form .box1 .number input,
 .connected .container  .form form .box1 .subject input{
-    padding: 20px;
+    padding: 14px 24px;
     border:var(--section-color-2) 1px solid;
     border-radius: 5px;
     width: 100%;
@@ -1836,6 +1929,7 @@ gap: 36px;
     background-color: var(--background-color);
     color: var(--section-color-2);
     font-size: 20px;
+    width: 100%!important;
 }
 .connected .container  .form form .box3{
     display: flex;
@@ -1851,7 +1945,7 @@ gap: 36px;
     background-color: #4070F4;
     color: #fff;
     border-radius: 100px;
-    padding: 14px 30px;
+    padding: 10px 20px;
     border: none;
     transition: var(--main-transition);
 }
@@ -1862,27 +1956,32 @@ gap: 36px;
 @media (max-width:768px){
     .connected .container .connected-form{
         flex-direction: column-reverse;
+       
+    }
+    .connected .container  .form form .box1{
+        flex-direction: column;
+        }
+}
+@media (max-width:992px){
+    .connected .container .connected-form{
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        width: 100%;
         gap: 20px;
     }
-
     .connected .container  .form{
-        flex-basis: 100%;
-        width: 100%;
-    }
-    .connected .container .info-form{
         flex-basis: 100%;
         width: 100%;
     }
     .connected .container .form form .box1 {
         gap: 10px;
     }
-}
-@media (max-width:992px){
-    .connected .container .connected-form{
-        justify-content: space-between;
+    .connected .container .info-form{
+        flex-basis: 100%;
+        width: 100%;
     }
     .connected .container  .form form .box1{
-    flex-direction: column;
+    flex-direction: row;
     }
 }
 /* End Connected */
