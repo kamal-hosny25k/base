@@ -28,7 +28,7 @@ if(login === null){
               <li><a class="p-drop-a" href="blog-single.html">Blog Single</a></li>
               <li><a class="p-drop-a" href="sign-in.html">Sign In</a></li>
               <li><a class="p-drop-a" href="sign-up.html">Sigin Up</a></li>
-              <li><a class="p-drop-a" href="profile.html">profile</a></li>
+                <li><a class="p-drop-a" href="profile.html">profile</a></li>   
               <li><a class="p-drop-a" href="404.html">404</a></li>
             </ul>
           </li>
@@ -70,7 +70,7 @@ if(login === null){
                   <li><a class="p-drop-a" href="blog-grid.html">Blog Grid</a></li>
                   <li><a class="p-drop-a" href="blog-single.html">Blog Single</a></li>
                   <li><a class="p-drop-a" href="sign-in.html">Sign In</a></li>
-                  <li><a class="p-drop-a" href="sign-up.html">Sigin Up</a></li>
+                  <li><a class="p-drop-a" href="sign-up.html">Sigin Up</a></li> 
                   <li><a class="p-drop-a" href="profile.html">profile</a></li>
                   <li><a class="p-drop-a" href="404.html">404</a></li>
                 </ul>

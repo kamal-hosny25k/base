@@ -398,6 +398,18 @@ gap: 10px;
 }
 .choose-us .container .box-1 .section1 img{
     max-width: 90%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.choose-us .container .box-1 .section1 img.about-img1{
+    width: 260px;
+    height: 270px;
+}
+.choose-us .container .box-1 .section2 img.about-img2{
+    width: 271px;
+    height: 436px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 .choose-us .container .box-1 .section2{
     position: relative;
